@@ -10,8 +10,37 @@
 
 <agm-map [fitBounds]="true"  [zoom]="10" [latitude]="30.73331" [longitude]="76.779419" >
   <ng-container *ngFor="let place of places">
-    <agm-marker [iconUrl]="icon"  [latitude]="place.latitude" [title]="My First Map" [longitude]="place.longitude" [label]="place.title" [agmFitBounds]="true" >
+    <agm-marker [iconUrl]="icon"  [latitude]="place.latitude"  [longitude]="place.longitude" [label]="place.title" [agmFitBounds]="true" >
       
     </agm-marker>
   </ng-container>
 </agm-map>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Open modal
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>

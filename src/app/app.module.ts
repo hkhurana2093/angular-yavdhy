@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
 import {Routes,RouterModule} from '@angular/router';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 //import { HttpModule } from '@angular/http';
 import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
@@ -53,6 +55,9 @@ const appRoutes:Routes = [
     HttpModule,
     FusionChartsModule,
     ChartsModule,
+    NgbModule,
+    NgbAlertModule,
+    NgbPaginationModule,
     RouterModule.forRoot(appRoutes),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyC0McczTB0q4J-6XWlu9FAjncjXyVO8i5k'
